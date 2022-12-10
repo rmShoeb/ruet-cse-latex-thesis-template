@@ -1,0 +1,53 @@
+\documentclass[12pt,final]{report}
+
+
+% change values of these variables
+\newcommand{\thesistitle}{Thesis Title}
+\newcommand{\authorname}{Your name}
+\newcommand{\authorroll}{1603***}
+\newcommand{\thesissupervisor}{Supervisor Name}
+\newcommand{\thesissupervisordesignation}{Supervisor Designation}
+\newcommand{\external}{External Name}
+\newcommand{\externaldesig}{External Designation}
+\newcommand{\tarikh}{October 16, 2022}
+
+% donot change
+\usepackage{packages}
+\newcommand{\dept}{Department of Computer Science \& Engineering}
+\newcommand{\ruet}{Rajshahi University of Engineering \& Technology}
+
+
+\begin{document}
+
+% skips page number on title page
+\pagenumbering{gobble}
+\include{chapters/i_title}
+\pagenumbering{roman}
+\setcounter{page}{2}
+\include{chapters/ii_acknowledgement}
+\include{chapters/iii_certificate}
+\include{chapters/iv_abstract}
+
+\tableofcontents
+\newpage
+% comment-out the marked lines, if you want your "list of tables" and "list of figures" in different pages
+\listoftables
+\begingroup % mark
+    \let\cleardoublepage\relax % mark
+    \let\clearpage\relax % mark
+    \listoffigures
+\endgroup % mark
+\clearpage
+
+\pagenumbering{arabic}
+\include{chapters/1_introduction}
+\include{chapters/2_background}
+\include{chapters/3_implementation}
+\include{chapters/4_performence_result}
+\include{chapters/5_future_works}
+\include{chapters/app_code_snippets}
+
+% \nocite{*}
+\printbibliography[heading=bibintoc,title={REFERENCES}]
+
+\end{document}

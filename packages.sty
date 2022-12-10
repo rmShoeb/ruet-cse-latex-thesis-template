@@ -1,0 +1,84 @@
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage[justification=centering]{caption}
+\usepackage{subcaption}
+\usepackage{appendix}
+\usepackage{lipsum}
+\usepackage{xcolor}
+
+\usepackage[
+    left=3cm,
+    top=2.54cm,
+    right=2.54cm,
+    bottom=2.54cm,
+    a4paper
+]{geometry}
+\renewcommand{\baselinestretch}{1.5}
+
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\usepackage{minted}
+\usemintedstyle{vs}
+
+\usepackage{hyperref}
+\hypersetup
+{
+    pdfborder = {0 0 0},
+    pdfauthor={\authorname},
+    pdfsubject={BSc Thesis},
+    pdftitle={\thesistitle},
+    pdfkeywords={RUET, BSc, Thesis, Report}
+}
+
+\usepackage{tocloft}
+\setlength{\cftsecindent}{0pt}
+\setlength{\cftsubsecindent}{0pt}
+\renewcommand{\cftsecleader}{\hfill}
+\renewcommand{\cftsubsecleader}{\hfill}
+\renewcommand{\cftchapfont}{\bfseries \fontsize{14pt}{1pt} \selectfont}
+\renewcommand{\cftsecfont}{\bfseries}
+\renewcommand{\cftchappagefont}{\normalfont}
+\renewcommand{\cftchapnumwidth}{0pt}
+\newlength{\commonindentshift}
+\setlength{\commonindentshift}{55pt}
+\renewcommand\cftchappresnum{\hspace{-0.1cm}CHAPTER }
+\renewcommand\cftchapaftersnumb{\newline}
+\renewcommand{\contentsname}{\hfill\bfseries\Large CONTENTS \hfill}   
+\renewcommand{\cftaftertoctitle}{\hfill}
+\renewcommand{\cftloftitlefont}{\hfill\bfseries \fontsize{16pt}{1pt} \selectfont \MakeUppercase}
+\renewcommand{\cftafterloftitle}{\hfill}
+\renewcommand{\cftlottitlefont}{\hfill\bfseries \fontsize{16pt}{1pt} \selectfont \MakeUppercase}
+\renewcommand{\cftafterlottitle}{\hfill}
+\renewcommand{\cftfigdotsep}{\cftnodots}
+\renewcommand{\cfttabdotsep}{\cftnodots}
+
+\setcounter{tocdepth}{1}
+\usepackage[notlof, nottoc, notlot]{tocbibind}
+
+\renewcommand{\@listI}{%
+\leftmargin=25pt
+\rightmargin=0pt
+\labelsep=5pt
+\labelwidth=20pt
+\itemindent=0pt
+\listparindent=0pt
+\topsep=0pt plus 2pt minus 4pt
+\partopsep=0pt plus 1pt minus 1pt
+\parsep=0pt plus 1pt
+\itemsep=\parsep}
+
+\usepackage[
+    style=ieee,
+    dashed=false,
+    maxbibnames=99
+]{biblatex}
+\bibliography{bibliography}
