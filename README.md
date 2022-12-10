@@ -15,7 +15,7 @@ Download this repository as zip and open it as a project in [Overleaf](https://w
 If you want to change anything in the template, or need to add more packages, edit the `packages.sty` file.
 
 ## Equations
-Use `align` environment for your numbered equations. You can reference them, if you label the line you want to refer to. You can use `\equref{}` for this purpose, but I prefer `\autoref{}` command from the `hyperref` package, which you can use to refer tables and images as well. Try it and see the difference.
+Use `align` environment for your numbered equations. You can reference them, if you label the line you want to refer to. You can use `\eqref{}` for this purpose, but I prefer `\autoref{}` command from the `hyperref` package, which you can use to refer tables and images as well. Try it and see the difference.
 
 For a multi-line equation, you can omit numbering for specific lines using `\nonumber` command.
 ```tex
